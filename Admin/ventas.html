@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Venta</title>
+</head>
+<style>
+  body{
+  background-image: url(../Img/tiendaadrentrored.jpg);
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center center;
+  }
+form{
+  position: relative;
+ top: 100px;
+ left: 30%;
+ font-size: 20px;
+ color: #fff;
+ margin: 20px 20px;
+ padding:30px;
+}
+  .bton{
+  text-align: center;
+    font-family: 'Raleway';
+    position: relative;
+    width: 50px;
+    height: 30px;
+  background: #DBDEDF;
+  font-size:13px;
+  color: #000;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  margin: 10px 10px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,.50);
+    opacity: .9;
+}
+
+</style>
+<body>
+ <div>
+  <a href="menu.html" class="bton" >Volver a menu</a>
+</div>
+<form action="ventas.php" method="POST">
+      <table>
+      	<tr>
+      		<td>Codigo de libro</td>
+      		<td>
+      			<input type="number" name="cod_libro" placeholder="Codigo..."  required="cod_libro">
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>Fecha</td>
+      		<td>
+      			<input type="date" name="fecha" placeholder="Fecha..." required="fecha">
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>Hora</td>
+      		<td>
+      			<input type="time" value="11:45:00" placeholder="Hora..." name="hora" required="hora">
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>Precio</td>
+      		<td>
+      		 $<input type="float" placeholder="precio..." name="preciofinal" required="precio">
+      		</td>
+      	</tr>
+      	<tr>
+      		<td>Metodo de pago</td>
+      		<td>
+      			 <select name="metodo_pago"  required="metodo_pago" required="metodo_pago">
+         	<option value="efectivo">Efectivo</option>
+         	<option value="tarjeta">Tarjeta</option>
+             </select>
+      		</td>
+      	</tr>
+      	<tr>
+      		<td><input type="submit" value="Aceptar"></td>
+      	</tr>
+      </table>
+</form> 
+</body>
+</html>

@@ -1,0 +1,48 @@
+.contenedor{	
+    
+	position: relative;
+  padding-top:20%;
+  left: 7%;
+
+}
+
+body{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px; 
+	background-image: url(../Img/Tiendared2.jpg);
+	 background-size: cover; 
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+table .name {
+   
+	color: #fff;
+	font-size: 20px;
+	
+}
+
+input{
+	border-radius: 15px;
+	margin-top: 10px;
+
+}
+td{
+	margin:50px;
+}
+.contenedor .btn{
+
+	position: relative; 
+	left: 50%;
+	 bottom: 50%;
+
+}
+.contenedor .btn:hover{
+	opacity: .8;
+	
+
+}
+.contenedor .name{
+	position: relative;
+	left: -4%;
+}

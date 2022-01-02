@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actualizar</title>
+	<style>
+	body{
+		color: #fff;
+		background-image: url('../Img/Tiendared2.jpg') ;
+	 background-size: cover; 
+	background-attachment: fixed;
+	background-position: center center;
+	}
+		input{
+			margin:10px;
+		}
+	</style>
+</head>
+<body>
+	<a href="menu.html">VOLVER AL MENU</a>
+     <div class="actualizar">
+     	<h2>Actualizar</h2>
+       <form action="actualizar.php" method="POST">
+       	<input type="text" name="cod_libro" placeholder="Código de libro a actualizar..."><br>
+       	<input type="text" name="nombre"  placeholder="Nombre..."><br>
+       	<input type="text" name="autor"  placeholder="Autor..."><br>
+       	<input type="text"  name="editorial" placeholder="Editorial.."><br>
+       	<input type="text" type="float" placeholder="Precio..." name="precio" ><br>
+       	<input type="text" type="number" placeholder="Ejemplares..." name="ejemplares"><br>
+       	<input type="text"placeholder="Ubicación..." name="ubicacion"><br>
+         <input type="submit" value="Actualizar" name="btn">
+       </form>     	
+     </div>
+
+
+      <div class="eliminar">
+      	<h2>Eliminar registro por completo</h2>
+	<form action="eliminar.php" method="POST">
+	<input type="text" name="cod_libro" placeholder="Código de libro a eliminar...">
+     <input type="submit" value="Eliminar libro" name="eliminar">
+	</form>
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

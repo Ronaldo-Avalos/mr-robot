@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Insertar</title>
+</head>
+<style>
+	 svg{
+      position: absolute;
+      top: -130px;
+      left: 400px;
+ }
+body { 
+	        background-image: url(../Img/tiendaadrentrored.jpg);
+	        background-size: cover; 
+	        background-attachment: fixed;
+	        background-position: center center;
+			font-size: 15px;
+			color: #000;
+			font-family: "segoe-ui", "open-sans", tahoma, arial;
+			padding: 0;
+			margin: 0;
+		}
+.insertar .contenedor{
+	left:  50%;
+    position: relative;
+    top:100px;
+    -moz-border-radius: 0 0 10px 10px; 
+    -webkit-border-radius: 0 0 10px 10px; 
+    border-radius: 0 0 10px 10px;
+}
+ h1{
+    color:#fff;
+	position: relative;
+	text-align: center;
+	right: 50px;
+	top: 80px;
+}
+
+.insertar .contenedor input,select{
+
+	box-shadow: 0px 0px 15px rgba(0,0,0,.45);
+	border-radius: 5%;
+	padding: 7px;
+	margin: 5px;
+}
+.insertar .contenedor .tablauno{
+
+position: relative;
+right: 30%;
+
+
+}
+.insertar .contenedor .tablados{
+    position: relative;
+    left: 10%;
+    top: -240px;
+}
+
+.insertar .contenedor label{
+
+	font-size: 20px;
+	color: #fff;
+}
+
+.insertar .contenedor .btninsertar{
+     font-size: 20px;
+	position: relative;
+	width: 100px;
+	margin: auto;
+	margin-top: 20px;
+	left: 100%
+}
+div a {
+			margin: 25px auto 0;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 17px;
+		}
+	.bton{
+	text-align: center;
+    font-family: 'Raleway';
+    position: relative;
+    width: 50px;
+    height: 30px;
+	background: #DBDEDF;
+	font-size:13px;
+	color: #000;
+	text-decoration: none;
+	padding: 15px 20px;
+	display: inline-block;
+	margin: 10px 10px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.50);
+    opacity: .9;
+}
+
+
+</style>
+<body>
+	<svg
+		id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450.33 100"><defs><style>.cls-1{font-size:30px;fill:#fff;font-family: MrRobot, MrRobot;}</style></defs><title>mr_robotsvg</title><text class="cls-1" transform="translate(0 78.71) scale(0.99 1)">MR.ROBOT</text>
+	</svg>
+	<div>
+	<a href="menu.html" class="bton" >Volver a menu</a>
+</div>
+<section class="insertar">
+		<h1>Insertar</h1>
+		<div class="contenedor">
+				<form action="insertar.php" method="POST">
+			<table class="tablauno">
+					<tr>
+							<td>
+								<label for="">Codigo</label>
+							</td>
+							<td>
+								<input type="text" placeholder="codigo..." name="cod_libro" required="codigo">
+							</td>
+						</tr>
+				<tr>
+					<td>
+						<label for="">Nombre</label>
+					</td>
+					<td>
+						<input type="text" name="nombre" required="nombre" placeholder="nombre..."> <br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">Autor</label>
+					</td>
+					<td>
+						<input type="text" name="autor" required="autor" placeholder="autor..."> <br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">Editorial</label>
+		
+					</td>
+					<td>
+						<input type="text" name="editorial" required="editorial..." placeholder="editorial"> <br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						
+			             <label for="">Idioma</label>
+					</td>
+					<td>
+
+			 <select name="idioma" id="idiomas" required="idioma">
+         	<option value="Español(ES)">Español(ES)</option>
+         	<option value="Ingles(ING)">Ingles(ING)</option>
+            <option value="Aleman(GE)">Aleman(GE)</option>
+             </select>
+					</td>
+				</tr>
+			
+			</table>
+			<table class="tablados">
+			<div class="parte2">
+				<tr>
+					<td>
+				<label for="">Precio</label>
+					</td>
+					<td>
+				<input type="float" placeholder="precio..." name="precio" required="precio"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">Ejemplares</label>
+					</td>
+					<td>
+				<input type="number" placeholder="Ejemplares..." name="ejemplares" required="totales" > <br>
+					</td>
+				</tr>
+                   
+                    <tr>
+                    	<td>
+                    		<label for="">Ubicación</label>
+                    	</td>
+                    	<td>
+
+                    		<input type="text" placeholder="ubicación..." name="ubicacion" required="ubicacion">
+
+                    	</td>
+                    </tr>
+                 </div>
+                    <tr>
+                    	<td>
+                    <input type="submit" class="btninsertar" value="Insertar" >
+
+                    	</td>
+                    </tr>
+                    </table>
+		</form>
+		</div>
+
+</section>
+</body>
+</html>
